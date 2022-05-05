@@ -19,7 +19,7 @@ app.use('/student/edit',express.static(join(process.cwd(),"public")))
 app.set("view engine","ejs");
 
 //load routes
-app.use("/student",web); 
+app.use("/",web); 
 
 app.listen(port,()=>{
     console.log(`server listening at http://localhost:${port}`)
